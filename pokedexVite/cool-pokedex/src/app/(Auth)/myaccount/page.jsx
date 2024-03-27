@@ -1,40 +1,66 @@
 "use client"
-
 import React, { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 const MyAccountPage = () => {
   const [trainerInfo, setTrainerInfo] = useState(null);
-  const [pokemons, setPokemons] = useState([]);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Assuming you'll use this for something
+  const [pokemonsSeen, setPokemonsSeen] = useState([]);
+  const [pokemonsCaught, setPokemonsCaught] = useState([]);
 
-  const fetchPokemon = async () => {
+  const fetchTrainerInfo = async () => {
     try {
       const response = await fetch('/Trainer.json');
       const data = await response.json();
-      setTrainerInfo(data.trainer);
-      setPokemons(data.pokemons);
+      setTrainerInfo({
+        username: data.username,
+        trainerName: data.trainerName,
+        imgUrl: data.imgUrl,
+        creationDate: new Date(data.creationDate['$date']).toLocaleDateString(),
+      });
+      setPokemonsSeen(data.pkmnSeen);
+      setPokemonsCaught(data.pkmnCatch);
     } catch (error) {
-      console.error("Failed to fetch trainer and Pokémon data:", error);
+      console.error("Failed to fetch trainer data:", error);
     }
   };
 
   useEffect(() => {
-    fetchPokemon();
+    fetchTrainerInfo();
   }, []);
 
   return (
     <div className={styles.container}>
-      <h2>Your Trainer:</h2>
       {trainerInfo && (
-        <div>
-          <p>Name: {trainerInfo.name}</p>
-          <p>Age: {trainerInfo.age}</p>
-          <p>Hometown: {trainerInfo.hometown}</p>
+        <div className={styles.trainerInfo}>
+          <div className={styles.trainerProfile}><img src={trainerInfo.imgUrl} alt="Trainer" /> <p>{trainerInfo.trainerName}</p></div>
+     
+      
+          <p>{trainerInfo.creationDate}</p>
         </div>
       )}
+      <div className={styles.pokemonCount}>
+      <h2>Seen:</h2>
+      <ul>
+        {pokemonsSeen.length > 0 ? (
+          pokemonsSeen.map((pokemon, index) => (
+            <li key={index}>{pokemon.name} - Seen</li>
+          ))
+        ) : (
+          <li>None</li>
+        )}
+      </ul>
 
-      <h2>Your Pokémons:</h2>
+      <h2>Caught:</h2>
+      <ul>
+        {pokemonsCaught.length > 0 ? (
+          pokemonsCaught.map((pokemon, index) => (
+            <li key={index}>{pokemon.name} - Caught</li>
+          ))
+        ) : (
+          <li>None</li>
+        )}
+      </ul>
+      </div>
     </div>
   );
 };

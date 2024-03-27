@@ -1,7 +1,10 @@
 /* components/Header.module.css */
 .header {
-    background-color: #efefef; 
+    background-color:  rgb(80, 86, 112);
     padding: 20px 0;
+    z-index: 2;
+    border-bottom: white 3px solid;
+    box-shadow: 0 0 10px black;
   }
   
   .navList {
@@ -17,11 +20,14 @@
   
   .navList li a {
     text-decoration: none; 
-    color: #333;
+    color: #f1f0f0;
+    transition: .5s;
+    padding: 20px;
     font-weight: bold; 
   }
   
   .navList li a:hover {
-    color: #0070f3; 
+    color:  rgb(80, 86, 112);
+    background-color: #f1f0f0;
   }
   

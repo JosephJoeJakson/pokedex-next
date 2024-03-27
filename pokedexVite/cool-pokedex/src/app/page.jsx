@@ -6,11 +6,10 @@ const PokemonPage = () => {
   const [pokemons, setPokemons] = useState([]);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isSettingOpen, setIsSettingOpen] = useState(false);
 
   const fetchPokemon = async () => {
     try {
-      const response = await fetch('/pokemon_data_100.json');
+      const response = await fetch('/PkmnData.json');
       const data = await response.json();
       setPokemons(data);
       setIsModalOpen(true); 
@@ -30,10 +29,6 @@ const PokemonPage = () => {
 
   const closeModal = () => {
     setIsModalOpen(false); 
-  };
-
-  const closeSetting = () => {
-    setIsSettingOpen(false); 
   };
 
   return (
@@ -64,13 +59,7 @@ const PokemonPage = () => {
         </div>
       )}
 
-{isSettingOpen && (
-        <div className={styles.setting}>
-        
-            <span className={styles.closeButtonSetting} onClick={closeSetting}>&times;</span>
-           
-        </div>
-      )}
+      
 
                 
       <div>
