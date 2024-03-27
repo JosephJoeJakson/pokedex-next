@@ -1,0 +1,109 @@
+.name {
+  background-color: aqua;
+}
+.pokemonName {
+  font-weight: normal;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+ 
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+  /* position: fixed;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%; 
+  height: 100%;
+  background-color: darkred;
+  border-right: 3px white solid;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto; /* Allows the height to grow based on content */
+  max-height: 90vh; /* Replace 90 with whatever max percentage of the viewport height you desire */
+  padding: 20px;
+  justify-self: left;
+  overflow-y: auto; /* Use 'auto' instead of 'scroll' to only show scrollbar when necessary */
+}
+
+
+.pokemonCard {
+  cursor: pointer; 
+  text-align: left;
+  background-color: rgb(83, 24, 24);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  margin-bottom: 16px;
+  text-align: center;
+  /* width: 20vw; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: .5s;
+}
+
+
+.image {
+  width: 20vw;
+  height: auto;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: inset 0 0 2px rgb(119, 11, 11);
+}
+
+.pokemonCard:hover {
+  background-color: rgba(151, 69, 69, 0.842);
+}
+
+.pokemonListImage {
+  width: 40px;
+  margin-right: 20px;
+}
+.infoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/******/
+.modal {
+  width: 100%; 
+  height: auto; 
+  overflow-x: hidden; 
+  display: flex;
+  background-color: rgb(107, 42, 42); 
+  transition: 0.5s; 
+  border-bottom: white 3px solid;
+  transition: .5s;
+}
+
+.modalContent {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.closeButton {
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  font-size: 35px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,211 @@
+[
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c1"
+    },
+    "name": "Aquafire",
+    "description": "Able to boil the water around it, creating steam to cloak its movements. It's both admired and feared by sailors.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/1234",
+    "types": [
+      "WATER",
+      "FIRE"
+    ],
+    "regions": [
+      {
+        "regionNumber": 10,
+        "regionName": "Marina"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c2"
+    },
+    "name": "Terrashock",
+    "description": "Generates electricity using its metallic claws, capable of causing landslides.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/3456",
+    "types": [
+      "ELECTRIC",
+      "GROUND"
+    ],
+    "regions": [
+      {
+        "regionNumber": 22,
+        "regionName": "Voltara"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c3"
+    },
+    "name": "Glacialite",
+    "description": "Freezes its surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/1222",
+    "types": [
+      "ICE",
+      "PSYCHIC"
+    ],
+    "regions": [
+      {
+        "regionNumber": 34,
+        "regionName": "Frostgard"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c4"
+    },
+    "name": "Sylvanix",
+    "description": "Emits a calming aura that promotes plant growth. It's a guardian of ancient forests.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/2345",
+    "types": [
+      "GRASS",
+      "FAIRY"
+    ],
+    "regions": [
+      {
+        "regionNumber": 47,
+        "regionName": "Verdant"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c5"
+    },
+    "name": "Solarcher",
+    "description": "Absorbs sunlight with its wings to power its radiant arrow attacks.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/2365",
+    "types": [
+      "FIRE",
+      "FLYING"
+    ],
+    "regions": [
+      {
+        "regionNumber": 59,
+        "regionName": "Solace"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3c6"
+    },
+    "name": "Necrostorm",
+    "description": "Commands the power of storms and the dead, feared in ancient times as an omen of disaster.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/1111",
+    "types": [
+      "GHOST",
+      "ELECTRIC"
+    ],
+    "regions": [
+      {
+        "regionNumber": 66,
+        "regionName": "Shadowlands"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3d0"
+    },
+    "name": "Lunaspark",
+    "description": "It dances in the moonlight, charging its luminous fur with a mystical glow that can guide lost travelers.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/2222",
+    "types": [
+      "ELECTRIC",
+      "FAIRY"
+    ],
+    "regions": [
+      {
+        "regionNumber": 88,
+        "regionName": "Moonfield"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3d1"
+    },
+    "name": "Infernoclaw",
+    "description": "Its claws can melt through the thickest armor. It marks its territory with scorched earth.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/3333",
+    "types": [
+      "FIRE",
+      "STEEL"
+    ],
+    "regions": [
+      {
+        "regionNumber": 77,
+        "regionName": "Blazepeak"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3d2"
+    },
+    "name": "Aeroquill",
+    "description": "It launches quills from its wings at supersonic speeds, targeting its prey with deadly accuracy.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/4444",
+    "types": [
+      "FLYING",
+      "NORMAL"
+    ],
+    "regions": [
+      {
+        "regionNumber": 54,
+        "regionName": "Skyreach"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3d3"
+    },
+    "name": "Venomshade",
+    "description": "It lurks in the shadows, its venom capable of weakening even the strongest foes before they notice its presence.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/5555",
+    "types": [
+      "POISON",
+      "DARK"
+    ],
+    "regions": [
+      {
+        "regionNumber": 63,
+        "regionName": "Darkfen"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc9a367856ce3d4"
+    },
+    "name": "Boulderift",
+    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6666",
+    "types": [
+      "GROUND",
+      "ROCK"
+    ],
+    "regions": [
+      {
+        "regionNumber": 35,
+        "regionName": "Stonevale"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  }
+]

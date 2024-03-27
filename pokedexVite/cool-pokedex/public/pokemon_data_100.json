@@ -1,0 +1,1902 @@
+[
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite",
+        "description": "Freezes its surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200222",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard",
+        "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur",
+        "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200222",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 2",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 3",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200225",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 5",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 6",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 7",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200228",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 8",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 9",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2000",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20023200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 200200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2002",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2003",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20023200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 200200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2005",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2006",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200237",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 2007",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2008",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2009",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20022000",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 20",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 22",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20022003",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 23",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 25",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20022006",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 26",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 27",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 28",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20022009",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 29",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 30",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 3200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200252",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 32",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 33",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 3200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200255",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 35",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 36",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 37",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200258",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 38",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 39",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2000",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20026200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 200200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2002",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2003",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20026200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 200200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2005",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2006",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200267",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 2007",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 2008",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 2009",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200270",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 50",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 5200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 52",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200273",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 53",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 5200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 55",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200276",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 56",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 57",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 58",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200279",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 59",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 60",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 6200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200282",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 62",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 63",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 6200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200285",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 65",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 66",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 67",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200288",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 68",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 69",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 70",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20029200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 7200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 72",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 73",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20029200",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 7200",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 75",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 76",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200297",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 77",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 78",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 79",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200300",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 80",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 8200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 82",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200303",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 83",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 8200",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 85",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200306",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 86",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 87",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 88",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200309",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 89",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 90",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 9200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20032002",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 92",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 93",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 9200",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20032005",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "5f20020082008200c200e2d5d6c60aabe200"
+        },
+        "name": "Charizard Variant 95",
+        "description": "Spits variant's fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/6",
+        "types": [
+            "FIRE",
+            "FLYING"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "60ae2002002200ad3f8f8d9200620796"
+        },
+        "name": "Bulbasaur Variant 96",
+        "description": "A strange seed was planted on its variant's back at birth. The plant sprouts and grows with this Pok\u00e9mon.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/200",
+        "types": [
+            "GRASS",
+            "POISON"
+        ],
+        "regions": [
+            {
+                "regionNumber": 200,
+                "regionName": "Kanto"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    },
+    {
+        "_id": {
+            "$oid": "65e9e2bd2fc9a367856ce3c3"
+        },
+        "name": "Glacialite Variant 97",
+        "description": "Freezes its variant's surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
+        "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/20032008",
+        "types": [
+            "ICE",
+            "PSYCHIC"
+        ],
+        "regions": [
+            {
+                "regionNumber": 3200,
+                "regionName": "Frostgard"
+            }
+        ],
+        "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+    }
+]
