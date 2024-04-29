@@ -1,0 +1,14 @@
+[
+    {
+        "_id": "John",
+        "password": "$2a$10$fqm.XfbqISAxKjX3pkkSeOc0MJoFdFJ9dow3iO8oSvDhg/fIJ14Re",
+        "admin": false,
+        "_class": "UserData"
+      },
+      {
+        "_id": "admin",
+        "password": "$2a$10$o0QpNqG/8l/9YjcOJnTa5.LqZR5SfiGzGQAHACwKAtU.LcXofFFLS",
+        "admin": true,
+        "_class": "UserData"
+      }
+]

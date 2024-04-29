@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
           </li>
           <li>
             <Link href="/login">
-              My account
+              Account
             </Link>
           </li>
           <li>

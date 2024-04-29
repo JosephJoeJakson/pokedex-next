@@ -6,21 +6,41 @@ import styles from './page.module.css';
 
 const RegisterPage = () => {
   const [username, setUsername] = useState('');
-  const [email, setEmail] = useState(''); // Added for registration
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here, you'd typically send a request to your backend to register the user
-    console.log('Registering with:', username, email, password);
+    
+    const userData = {
+      username,
+      email,
+      password
+    };
 
-    // Assuming registration is successful, you can redirect the user, for example to the login page
-    // router.push('/login');
+    try {
+      const response = await fetch('ttp://localhost:8080/api/users/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+      });
+
+      if (response.ok) {
+        console.log('User registered successfully');
+        // Redirect user to login page or wherever you want
+      } else {
+        console.error('Failed to register user');
+      }
+    } catch (error) {
+      console.error('Error registering user:', error);
+    }
   };
 
   return (
     <div className={styles.container}>
-      <h2>Register</h2> {/* Header for clarity */}
+      <h2>Register</h2>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
         <div className={styles.formGroup}>
           <label htmlFor="username">Username</label>
@@ -33,7 +53,7 @@ const RegisterPage = () => {
             required
           />
         </div>
-        <div className={styles.formGroup}> {/* Email input field */}
+        <div className={styles.formGroup}>
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -55,9 +75,9 @@ const RegisterPage = () => {
             required
           />
         </div>
-        <Link href="/login" className={styles.loginButton}>
+        <button type="submit" className={styles.loginButton}>
           Register
-        </Link>
+        </button>
       </form>
       <div className={styles.link}>
         <Link href="/login">

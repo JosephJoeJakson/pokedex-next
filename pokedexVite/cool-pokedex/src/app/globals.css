@@ -1,4 +1,5 @@
 :root {
+  --color-text: white;
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -77,6 +78,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  color: black;
 }
 
 html,
@@ -88,12 +90,11 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url('../../public/day.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
@@ -105,4 +106,76 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.STEEL {
+  background-color: #A0A0B9; /* Muted version of Steel */
+}
+
+.FIRE {
+  background-color: #E07C5F; /* Muted version of Fire */
+}
+
+.WATER {
+  background-color: #7894B2; /* Muted version of Water */
+}
+
+.GRASS {
+  background-color: #88A75D; /* Muted version of Grass */
+}
+
+.ELECTRIC {
+  background-color: #E0C878; /* Muted version of Electric */
+}
+
+.PSYCHIC {
+  background-color: #D89AA8; /* Muted version of Psychic */
+}
+
+.ICE {
+  background-color: #A8C0C0; /* Muted version of Ice */
+}
+
+.DRAGON {
+  background-color: #857AB8; /* Muted version of Dragon */
+}
+
+.DARK {
+  background-color: #857870; /* Muted version of Dark */
+}
+
+.FAIRY {
+  background-color: #E0A9B8; /* Muted version of Fairy */
+}
+
+.NORMAL {
+  background-color: #B0B0A0; /* Muted version of Normal */
+}
+
+.FIGHTING {
+  background-color: #C07868; /* Muted version of Fighting */
+}
+
+.FLYING {
+  background-color: #B0A0E0; /* Muted version of Flying */
+}
+
+.POISON {
+  background-color: #B080A8; /* Muted version of Poison */
+}
+
+.GROUND {
+  background-color: #D0B078; /* Muted version of Ground */
+}
+
+.ROCK {
+  background-color: #C0B088; /* Muted version of Rock */
+}
+
+.BUG {
+  background-color: #B0B068; /* Muted version of Bug */
+}
+
+.GHOST {
+  background-color: #9080A8; /* Muted version of Ghost */
 }
