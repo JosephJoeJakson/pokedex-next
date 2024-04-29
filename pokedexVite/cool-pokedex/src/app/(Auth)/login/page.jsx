@@ -37,7 +37,7 @@ const LoginPage = () => {
   return (
     <div className={styles.container}>
       <div>
-        <img className={styles.logo} src="https://img1.picmix.com/output/stamp/normal/9/5/6/2/572659_6a4f7.gif" alt="PKMN LOGO" />
+        <img className={styles.logo} src="https://ser-dialest.github.io/GifTastic/assets/images/PokemonLogo.png" alt="PKMN LOGO" />
       </div>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
         <div className={styles.formGroup}>

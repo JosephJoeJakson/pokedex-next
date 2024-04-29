@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 const PokemonPage = () => {
-  const [pokemons, setPokemons] = useState({ data: [], count: 0 });
+  const [pokemons, setPokemons] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,54 +12,23 @@ const PokemonPage = () => {
   const [selectedTypes, setSelectedTypes] = useState([]);
 
   // Assuming Pokémon types are static for demonstration
-  const pokemonTypes = ['NORMAL', 
-    'FIRE', 
-    'WATER', 
-    'ELECTRIC', 
-    'GRASS',
-    'ICE', 
-    'FIGHTING', 
-    'POISON', 
-    'GROUND', 
-    'FLYING',
-    'PSYCHIC', 
-    'BUG', 
-    'ROCK', 
-    'GHOST', 
-    'DRAGON',
-    'DARK', 
-    'STEEL', 
-    'FAIRY'];
-
-  const fetchPokemon = async (filters = {}) => {
-    const query = new URLSearchParams();
-
-
-    if (filters.partialName) {
-      query.append('partialName', filters.partialName);
-    }
-
-    if (filters.types?.[0]) {
-      query.append('typeOne', filters.types[0]);
-    }
-    if (filters.types?.[1]) {
-      query.append('typeTwo', filters.types[1]);
-    }
-
-    try {
-      const response = await fetch(`http://localhost:8080/api/pkmn/search?${query.toString()}`);
-      const data = await response.json();
-      setPokemons(data);
-    } catch (error) {
-      console.error("Failed to fetch Pokémon data:", error);
-    } finally {
-      setIsModalOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchPokemon();
-  }, []);
+  const types = ['NORMAL', 'FIRE', 'WATER', 'ELECTRIC', 'GRASS','ICE', 'FIGHTING', 'POISON', 'GROUND', 'FLYING','PSYCHIC', 'BUG', 'ROCK', 'GHOST', 'DRAGON','DARK', 'STEEL', 'FAIRY'];
+  
+    const fetchPokemon = async () => {
+      try {
+        const response = await fetch('/PkmnData.json');
+        const data = await response.json();
+        setPokemons(data);
+        setIsModalOpen(true); 
+      } catch (error) {
+        console.error("Failed to fetch Pokémon data:", error);
+      }
+    };
+  
+    useEffect(() => {
+      fetchPokemon();
+    }, []);
+  
 
   const toggleType = (type) => {
     const newSelectedTypes = selectedTypes.includes(type) ?
@@ -110,17 +79,18 @@ const PokemonPage = () => {
 
 {isModalOpen && selectedPokemon && (
   <div className={styles.modal}>
-    <span className={styles.closeButton} onClick={closeModal}>&times;</span>
+
     <div className={styles.modalContent}>
-      <h1 className={styles.pokemonName}>{selectedPokemon.pokemonName}</h1>
-      <img src={selectedPokemon.pokemonImg} alt={selectedPokemon.pokemonName} className={styles.pokemonImage} />
-      <p className={styles.pokemonDescription}>{selectedPokemon.pokemonDescription}</p>
-      <div className={styles.pokemonTypes}>
+    <span className={styles.closeButton} onClick={closeModal}>&times;</span>
+      <h1 className={styles.pokemonName}>{selectedPokemon.name}</h1>
+      <img src={selectedPokemon.imgUrl} alt={selectedPokemon.name} className={styles.pokemonImage} />
+      <p className={styles.pokemonDescription}>{selectedPokemon.description}</p>
+      <div className={styles.types}>
         <h3>Types</h3>
-        {selectedPokemon.types && selectedPokemon.pokemonTypes.length > 0 ? (
-          selectedPokemon.pokemonTypes.map((pokemontype, index) => (
-            <span key={index} className={styles.pokemontype}>
-              {pokemontype}
+        {selectedPokemon.types && selectedPokemon.types.length > 0 ? (
+          selectedPokemon.types.map((type, index) => (
+            <span key={index} className={`${type} type`}>
+              {type}
 
             </span>
           ))
@@ -130,8 +100,8 @@ const PokemonPage = () => {
       </div>
       <div className={styles.pokemonRegions}>
         <h3>Region</h3>
-        {selectedPokemon.regions && selectedPokemon.pokemonRegions.length > 0 ? (
-          selectedPokemon.pokemonRegions.map((region, index) => (
+        {selectedPokemon.regions && selectedPokemon.regions.length > 0 ? (
+          selectedPokemon.regions.map((region, index) => (
             <span key={index} className={styles.region}>
               {region.regionName} (#{region.regionNumber})
             </span>
@@ -160,7 +130,7 @@ const PokemonPage = () => {
 
       {isFilterBarOpen && (
         <div className={styles.filterBar}>
-          {pokemonTypes.map((type, index) => (
+          {types.map((type, index) => (
             <label key={index} className={`${type} ${styles.filterLabel} ${selectedTypes.length === 2 && !selectedTypes.includes(type) ? styles.dim : ''}`} >
               <input
                 type="checkbox"
@@ -176,7 +146,7 @@ const PokemonPage = () => {
         </div>
       )}
 
-      {pokemons.data.length === 0 && (
+      {pokemons.length === 0 && (
         <div className={styles.emptyRequest}>
           <img src="./loading.gif" alt="Empty Request" className={styles.notfound} />
           <p>No pokemon found</p>
@@ -184,13 +154,13 @@ const PokemonPage = () => {
       )}
 
       <div className={styles.list}>
-        {pokemons.data.map((pokemon, index) => (
-          <div key={index} className={`${pokemon.pokemonTypes[0]} ${styles.pokemonCard}`} onClick={() => selectPokemon(pokemon)}>
-            <img className={styles.pokemonListImage} src={pokemon.pokemonImg} alt={pokemon.pokemonName} />
+        {pokemons.map((pokemon, index) => (
+          <div key={index} className={`${pokemon.types[0]} ${styles.pokemonCard}`} onClick={() => selectPokemon(pokemon)}>
+            <img className={styles.pokemonListImage} src={pokemon.imgUrl} alt={pokemon.name} />
             <div className={styles.pokemonListInfo}>
-              <p className={styles.pokemonListName}>{pokemon.pokemonName}</p>
+              <p className={styles.pokemonListName}>{pokemon.name}</p>
               <ul className={styles.pokemonListTypes}>
-                {pokemon.pokemonTypes.map((type, typeIndex) => (
+                {pokemon.types.map((type, typeIndex) => (
                   <li className={`${type} type`} key={typeIndex}>{type}</li>
                 ))}
               </ul>

@@ -40,7 +40,9 @@ const RegisterPage = () => {
 
   return (
     <div className={styles.container}>
-      <h2>Register</h2>
+      <div>
+        <img className={styles.logo} src="https://ser-dialest.github.io/GifTastic/assets/images/PokemonLogo.png" alt="PKMN LOGO" />
+      </div>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
         <div className={styles.formGroup}>
           <label htmlFor="username">Username</label>
