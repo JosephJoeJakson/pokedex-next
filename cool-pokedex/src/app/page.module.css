@@ -1,0 +1,409 @@
+
+
+/* Search Bar*/
+.searchIcon, .filterIcon{
+  width: 20px;
+  margin-right: 5px;
+}
+.search {
+  margin: 10px;
+  width: 50%;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.search>input {
+  width: 100%;
+  color: black;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 2px;
+}
+
+/* General card styling */
+.pokemonCard {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  transition: box-shadow .3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-size: 130px;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  width: 300px;
+  color: #fff; 
+}
+
+/* Empty state styling */
+.emptyRequest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+.emptyRequest img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* List container */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjusted for better space utilization */
+}
+
+.pokemonListName {
+  background-color: #ffffff71;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Pokemon image */
+.pokemonListImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular images */
+  margin-right: 10px;
+}
+
+/* Info section within card */
+.pokemonListInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Type list styling */
+.pokemonListTypes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.pokemonListTypes li {
+  margin: 2px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 90%;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .pokemonCard {
+    flex-direction: column;
+    align-items: center;
+    background-position: top;
+  }
+  
+  .pokemonListInfo {
+    width: 100%; /* Full width on smaller screens */
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+ 
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+  /* position: fixed;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%; 
+  height: 100%;
+  background-color:   rgb(80, 86, 112);
+  border-right: 3px white solid;
+}
+
+/* Responsive design */
+@media (max-width: 770px) {
+
+  .filterBar {
+    width: 100%
+  }
+  .searchBar, .filterButton, .clearButton, .applyButton {
+    width: 100%;
+  }
+  .pokemonListTypes {
+    justify-content: center;
+  }
+  .selectorContainer:nth-of-type(2){
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+.notfound {
+  width: 30px;
+  height: 30px;
+}
+.image {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50px;
+  padding: 20px;
+  box-shadow: inset 0 0 2px  rgb(80, 86, 112);
+}
+
+
+.infoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* Container for the modal, covers the whole screen */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's on top of other content */
+}
+
+/* Content inside the modal */
+.modalContent {
+  position: relative;
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+
+/* Pokémon name styling */
+.pokemonName {
+  font-size: 24px;
+  color: #333;
+  margin-top: 0;
+}
+
+/* Pokémon image styling */
+.pokemonImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Description paragraph styling */
+.pokemonDescription {
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Types and Regions container */
+.pokemonTypes, .pokemonRegions {
+  margin-top: 15px;
+}
+
+/* Individual type and region label styling */
+.type, .region {
+  display: inline-block;
+  background-color: #efefef;
+  border-radius: 16px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+/* Headers for types and regions */
+.pokemonTypes h3, .pokemonRegions h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+
+.closeButton, .closeButtonSetting {
+  position: absolute;
+  right: 25px;
+  font-size: 35px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.setting {
+  position: fixed; /* Or absolute, depending on your layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* Adjust as needed */
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Ensure it's above other content */
+} 
+
+
+
+
+
+
+
+/* General Styles for Filter Bar */
+.filterBar {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+  background-color: #6969693b;
+  border-radius: 20px;
+  padding: 5px;
+ 
+}
+
+.selectorContainer {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.selectorContainer label, .selectorContainer .selector {
+  margin: 5px;
+}
+
+.selector {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc; /* subtle border */
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.selector:hover {
+  background-color: #f8f8f8; /* Light grey background on hover */
+}
+
+/* Label and Checkbox Styles */
+.filterLabel {
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  user-select: none; /* Prevent text selection */
+}
+
+.filterLabel:hover {
+  transform: translateY(-2px);
+}
+
+.active {
+  background-color: #ff000088; /* Light green background for active labels */
+  color: #ffffff; /* Dark green text for contrast */
+}
+
+.typeBadge {
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  color: #ffffff; /* White text color */
+  border-radius: 10px;
+  padding: 3px 8px;
+}
+
+/* Button Styles */
+.clearButton, .applyButton {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: auto;
+  font-size: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.clearButton {
+  background-color: #e0e0e0; /* Neutral color for clear */
+}
+
+.clearButton:hover {
+  background-color: #bdbdbd; /* Darker grey on hover */
+}
+
+.applyButton {
+  background-color: #4caf50; /* Vibrant green for apply */
+  color: #fff; /* White text color */
+}
+
+.applyButton:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.dim {
+  opacity: 0.5; /* Dim the item to indicate it's disabled */
+  pointer-events: none; /* Disables clicking on the label */
+  background-color: #e0e0e0; /* Grey background */
+  color: #9e9e9e; /* Grey text to match */
+}
+
+
+
+
+
