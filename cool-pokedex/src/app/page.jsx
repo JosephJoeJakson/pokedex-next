@@ -13,29 +13,37 @@ const PokemonPage = () => {
   const [types, setTypes] = useState([]);
   const [pokemonStatuses, setPokemonStatuses] = useState({}); // Object to track seen and caught status
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [showAdminCommands, setShowAdminCommands] = useState(false);
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  const [pokemonToDelete, setPokemonToDelete] = useState(null);
+  
+
 
 
   useEffect(() => {
-
     const currentUser = localStorage.getItem('currentUser');
-    setIsLoggedIn(!!currentUser);
-    // Attempt to load types from localStorage
+    if (currentUser) {
+      const userData = JSON.parse(currentUser);
+      setIsLoggedIn(true);
+      setIsAdmin(userData.admin); // Assume isAdmin is a boolean in your user data
+    }
+  
     const storedTypes = localStorage.getItem('types');
     if (storedTypes) {
-      setTypes(Object.values(JSON.parse(storedTypes))); // Convert object to array
+      setTypes(Object.values(JSON.parse(storedTypes)));
     } else {
       fetchTypes();
     }
-
-    // Attempt to load Pokemon data from localStorage
+  
     const localPokemons = localStorage.getItem('pokemons');
     if (localPokemons) {
       setPokemons(JSON.parse(localPokemons));
     } else {
       fetchPokemon();
     }
-
   }, []);
+  
 
   const fetchTypes = async () => {
     try {
@@ -150,11 +158,11 @@ const PokemonPage = () => {
           <h1 className={styles.pokemonName}>{selectedPokemon.name}</h1>
           <img src={selectedPokemon.imgUrl} alt={selectedPokemon.name} className={styles.pokemonImage} />
           <p className={styles.pokemonDescription}>{selectedPokemon.description}</p>
-          <div className={styles.types}>
+          <div className={styles.infoTypes}>
             <h3>Types</h3>
             {selectedPokemon.types && selectedPokemon.types.length > 0 ? (
               selectedPokemon.types.map((type, index) => (
-                <span key={index} className={`${styles[type]} type`}>
+                <span key={index} className={`${[type]} type`}>
                   {type}
                 </span>
               ))
@@ -188,6 +196,11 @@ const PokemonPage = () => {
           onChange={e => setSearchTerm(e.target.value)}
         />
         <img src="./search.webp" alt="filter-icon" className={styles.filterIcon} onClick={toggleFilterBar}/>
+        {isLoggedIn && isAdmin && (
+        <button className={styles.adminToggle} onClick={() => setShowAdminCommands(prev => !prev)}>
+            {showAdminCommands ? "Hide Admin Tools" : "Show Admin Tools"}
+        </button>
+    )}
       </div>
  
       {isFilterBarOpen && (
@@ -237,7 +250,39 @@ const PokemonPage = () => {
 
 <div className={styles.list}>
   {pokemons.map((pokemon, index) => (
+   
     <div key={index} className={styles.pokemonEntry}>
+  {isLoggedIn && isAdmin && showAdminCommands && (
+    <div className={`${pokemon.types[0]} ${styles.adminTools}`}>
+     <a className={styles.modifyButton} href={`/edit-pokemon?pkm=${encodeURIComponent(pokemon._id.$oid)}`}>
+  Modify
+</a>
+
+      <button className={styles.deleteButton} onClick={() => {
+    setPokemonToDelete(pokemon);
+    setShowDeleteModal(true);
+}}>
+    Delete
+</button>
+
+
+    </div>
+)}
+
+{showDeleteModal && pokemonToDelete && (
+  <div className={styles.modalOverlay}>
+    <div className={styles.deleteModal}>
+      <p>Are you sure you want to delete {pokemonToDelete.name}?</p>
+      <button className={styles.modalButton} onClick={() => {
+        // Assume the deletion is a GET request for simplicity; use DELETE in real applications
+        window.location.href = `/delete-pokemon?name=${encodeURIComponent(pokemonToDelete.name)}`;
+        setShowDeleteModal(false); // Close modal after initiating delete
+      }}>Yes</button>
+      <button className={styles.modalButton} onClick={() => setShowDeleteModal(false)}>No</button>
+    </div>
+  </div>
+)}
+
       <div className={`${pokemon.types[0]} ${styles.pokemonCard}`} onClick={() => selectPokemon(pokemon)} style={{ backgroundImage: `url(${pokemon.types[0]}.png)` }}>
         <img className={styles.pokemonListImage} src={pokemon.imgUrl} alt={pokemon.name} />
         <div className={styles.pokemonListInfo}>
