@@ -31,9 +31,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
+  border-radius: 8px 8px 0px 0px;
   padding: 10px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   transition: box-shadow .3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   background-size: 130px;
@@ -174,8 +176,39 @@ justify-content: space-evenly;
 }
 
 
+.pokemonStatus {
+  /* background-color: #f8f8f8; */
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: #ffffff 1px solid;
+}
 
+.pokemonStatus>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pokemonStatus>div>button {
+  width: 70px;
+  margin-left:5px;
+  border: 1px black solid;
+  border-radius: 50px;
+  background-color: rgb(212, 212, 212);
+}
+.pokemonStatus img {
+  width: 30px;
+}
 
+.pokemonStatus>p {
+  font-size: 10px;
+}
 
 .notfound {
   width: 30px;

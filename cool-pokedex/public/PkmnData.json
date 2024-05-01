@@ -1,7 +1,7 @@
 [
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c1"
+      "$oid": "65e9dc8d2fc944a367856ce3c1"
     },
     "name": "Aquafire",
     "description": "Able to boil the water around it, creating steam to cloak its movements. It's both admired and feared by sailors.",
@@ -20,7 +20,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c2"
+      "$oid": "65e9dc8d2fc9a44367856ce3c2"
     },
     "name": "Terrashock",
     "description": "Generates electricity using its metallic claws, capable of causing landslides.",
@@ -39,7 +39,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c3"
+      "$oid": "65e9dc8d2fc9a3673454856ce3c3"
     },
     "name": "Glacialite",
     "description": "Freezes its surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
@@ -58,7 +58,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c4"
+      "$oid": "65e9dc8d2fc9a367456564856ce3c4"
     },
     "name": "Sylvanix",
     "description": "Emits a calming aura that promotes plant growth. It's a guardian of ancient forests.",
@@ -77,7 +77,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c5"
+      "$oid": "65e9dc8d2fc9a3664567856ce3c5"
     },
     "name": "Solarcher",
     "description": "Absorbs sunlight with its wings to power its radiant arrow attacks.",
@@ -96,7 +96,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3c6"
+      "$oid": "65e9dc8d2fc9a456456367856ce3c6"
     },
     "name": "Necrostorm",
     "description": "Commands the power of storms and the dead, feared in ancient times as an omen of disaster.",
@@ -115,7 +115,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d0"
+      "$oid": "65e9dc8d2fc95465476a367856ce3d0"
     },
     "name": "Lunaspark",
     "description": "It dances in the moonlight, charging its luminous fur with a mystical glow that can guide lost travelers.",
@@ -134,7 +134,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d1"
+      "$oid": "65e9dc8d2fc9a776367856ce3d1"
     },
     "name": "Infernoclaw",
     "description": "Its claws can melt through the thickest armor. It marks its territory with scorched earth.",
@@ -153,7 +153,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d2"
+      "$oid": "65e9dc8d2fc9a23367856ce3d2"
     },
     "name": "Aeroquill",
     "description": "It launches quills from its wings at supersonic speeds, targeting its prey with deadly accuracy.",
@@ -172,7 +172,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d3"
+      "$oid": "65e9dc8d2fc95665Y74a367856ce3d3"
     },
     "name": "Venomshade",
     "description": "It lurks in the shadows, its venom capable of weakening even the strongest foes before they notice its presence.",
@@ -191,7 +191,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc5659a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -210,7 +210,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2f3345c9a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -229,7 +229,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc66779a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -248,7 +248,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2f9890c9a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -267,7 +267,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc343455669a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -286,7 +286,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc899339a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -305,7 +305,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc334455569a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
@@ -324,7 +324,7 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc9a367856ce3d4"
+      "$oid": "65e9dc8d2fc459a367856ce3d4"
     },
     "name": "Boulderift",
     "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
