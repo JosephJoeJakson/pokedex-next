@@ -40,6 +40,7 @@ const LoginPage = () => {
 
   return (
     <div className={styles.container}>
+       <div className={styles.innerContainer}>
       <div>
         <img className={styles.logo} src="https://ser-dialest.github.io/GifTastic/assets/images/PokemonLogo.png" alt="PKMN LOGO" />
       </div>
@@ -72,6 +73,7 @@ const LoginPage = () => {
         <Link href="/register">
           Register
         </Link>
+      </div>
       </div>
     </div>
   );

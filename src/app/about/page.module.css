@@ -1,0 +1,55 @@
+/* page.module.css */
+.container {
+  background-color: #ffffff;  /* Bright white background for contrast */
+  color: #333333;
+  padding: 40px 20px 20px 20px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container h1,   .container h2 {
+  font-size: 3rem;
+  background: -webkit-linear-gradient(45deg, #ff6347, #ffeb3b, #8bc34a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowAnimation 10s ease infinite;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@keyframes rainbowAnimation {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.container p {
+  line-height: 1.7;
+  color: #2c3e50; /* Darker color for better readability */
+  text-align: justify;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.container a {
+  color: #e91e63; /* Pink for high visibility and contrast */
+  font-weight: bold;
+  position: relative;
+  z-index: 2; /* Ensures link stays clickable */
+}
+
+.container a:hover {
+  color: #9c27b0; /* Purple on hover for a fun change */
+  text-decoration: underline wavy #ffeb3b; /* Wavy underline for extra funk */
+}
+
+
+@media (max-width: 500px) {
+ .container {
+  width: 100vw;
+ }
+}

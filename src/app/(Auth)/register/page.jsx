@@ -40,12 +40,13 @@ const RegisterPage = () => {
 
   return (
     <div className={styles.container}>
+          <div className={styles.innerContainer}>
       <div>
         <img className={styles.logo} src="https://ser-dialest.github.io/GifTastic/assets/images/PokemonLogo.png" alt="PKMN LOGO" />
       </div>
       <form onSubmit={handleSubmit} className={styles.loginForm}>
         <div className={styles.formGroup}>
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Username : </label>
           <input
             type="text"
             id="username"
@@ -56,7 +57,7 @@ const RegisterPage = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email : </label>
           <input
             type="email"
             id="email"
@@ -67,7 +68,7 @@ const RegisterPage = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Password : </label>
           <input
             type="password"
             id="password"
@@ -86,6 +87,7 @@ const RegisterPage = () => {
           Already have an account? Login
         </Link>
       </div>
+    </div>
     </div>
   );
 };
