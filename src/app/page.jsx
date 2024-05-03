@@ -47,7 +47,7 @@ const PokemonPage = () => {
 
   const fetchTypes = async () => {
     try {
-      const response = await fetch('/types.json');
+      const response = await fetch('./types.json');
       const data = await response.json();
       setTypes(Object.values(data)); // Convert object to array before setting state
       localStorage.setItem('types', JSON.stringify(data)); // Store data as is in localStorage
@@ -58,7 +58,7 @@ const PokemonPage = () => {
 
   const fetchPokemon = async () => {
     try {
-      const response = await fetch('/PkmnData.json');
+      const response = await fetch('./PkmnData.json');
       const data = await response.json();
       setPokemons(data);
       localStorage.setItem('pokemons', JSON.stringify(data));
@@ -295,7 +295,7 @@ const PokemonPage = () => {
       </div>
        {isLoggedIn && (
     <div style={{ display: 'flex', alignItems: 'center' }} className={`${pokemon.types[0]} ${styles.pokemonStatus}`}>
-   <p>      {pokemonStatuses[pokemon._id.$oid]?.caught ? `You caught ${pokemon.name}` : pokemonStatuses[pokemon._id.$oid]?.seen ? `You have seen ${pokemon.name}` : `You haven't seen ${pokemon.name}`}</p>
+   <p>      {pokemonStatuses[pokemon._id.$oid]?.caught ? `You caught ${pokemon.name}` : pokemonStatuses[pokemon._id.$oid]?.seen ? `You have seen ${pokemon.name}` : `You havent seen ${pokemon.name}`}</p>
    <div>
     <img 
       src={
