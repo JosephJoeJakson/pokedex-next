@@ -1,8 +1,9 @@
 "use client";
+
 import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
-const EditPokemonPage = () => {
+const  AddPokemonPage = () => {
   const [pokemon, setPokemon] = useState({
     name: '',
     description: '',
@@ -10,50 +11,30 @@ const EditPokemonPage = () => {
     types: [],
     regions: [{ regionName: '', regionNumber: '' }]
   });
-  const [currentUser, setCurrentUser] = useState({
-    admin: false
-  });
+  const [currentUser, setCurrentUser] = useState(null);
 
   useEffect(() => {
-    // Fetch current user details (pseudo-code, replace with your actual data fetching logic)
-    const fetchCurrentUser = async () => {
-      try {
-        const userResponse = await fetch('/api/currentUser');
-        const userData = await userResponse.json();
-        setCurrentUser(userData);
-      } catch (error) {
-        console.error('Failed to fetch user data:', error);
-      }
-    };
+    const userData = JSON.parse(localStorage.getItem('currentUser'));
+    setCurrentUser(userData);
 
-    fetchCurrentUser();
-
-    const queryParams = new URLSearchParams(window.location.search);
-    const pokemonId = queryParams.get('pkm');
-    const fetchPokemonData = async () => {
-      try {
-        const response = await fetch('/PkmnData.json');
-        const pokemons = await response.json();
-        const specificPokemon = pokemons.find(p => p._id.$oid === pokemonId);
-        if (specificPokemon) {
-          setPokemon({
-            ...specificPokemon,
-            regions: specificPokemon.regions.length > 0 ? specificPokemon.regions : [{ regionName: '', regionNumber: '' }]
-          });
-        } else {
-          console.error('No Pokemon found with the given ID');
-        }
-      } catch (error) {
-        console.error('Failed to fetch Pokemon data:', error);
-      }
-    };
-
-    fetchPokemonData();
+    setPokemon({
+      name: '',
+      description: '',
+      imgUrl: '',
+      types: [],
+      regions: [{ regionName: '', regionNumber: '' }]
+    });
   }, []);
 
+  const handleChange = (field, value) => {
+    if (!currentUser || !currentUser.admin) {
+      return;
+    }
+    setPokemon(prev => ({ ...prev, [field]: value }));
+  };
+
   const handleRegionChange = (index, field, value) => {
-    if (!currentUser.admin) {
-      alert("You do not have permission to edit this.");
+    if (!currentUser || !currentUser.admin) {
       return;
     }
     const updatedRegions = pokemon.regions.map((region, i) => {
@@ -62,12 +43,12 @@ const EditPokemonPage = () => {
       }
       return region;
     });
-    setPokemon({ ...pokemon, regions: updatedRegions });
+    setPokemon(prev => ({ ...prev, regions: updatedRegions }));
   };
 
   const addRegion = () => {
-    if (!currentUser.admin) {
-      alert("You do not have permission to add regions.");
+    if (!currentUser || !currentUser.admin) {
+
       return;
     }
     setPokemon(prevState => ({
@@ -78,32 +59,34 @@ const EditPokemonPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!currentUser.admin) {
-      alert("You do not have permission to save changes.");
+    if (!currentUser || !currentUser.admin) {
+
       return;
     }
-    console.log('Form is valid');
-    alert('Edit saved successfully!');
-    window.location.href = '/';
+
+      window.location.href = './'; 
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <label>Name:
-        <input type="text" value={pokemon.name} readOnly />
+        <input type="text" value={pokemon.name} onChange={(e) => handleChange('name', e.target.value)} />
       </label>
       <label>Description:
-        <textarea value={pokemon.description} readOnly />
+        <textarea value={pokemon.description} onChange={(e) => handleChange('description', e.target.value)} />
       </label>
       <label>Image URL:
-        <input type="text" value={pokemon.imgUrl} readOnly />
+        <input type="text" value={pokemon.imgUrl} onChange={(e) => handleChange('imgUrl', e.target.value)} />
       </label>
       <div className={styles.typeContainer}>
-        {pokemon.types.map((type, index) => (
-          <label key={index}>Type {index + 1}:
-            <input type="text" value={type} readOnly />
+
+          <label key={1}>Type 1:
+            <input type="text" value={pokemon.type1} />
           </label>
-        ))}
+          <label key={2}>Type 2:
+            <input type="text" value={pokemon.type2}   />
+          </label>
+      
       </div>
       {pokemon.regions.map((region, index) => (
         <div className={styles.regionContainer} key={index}>
@@ -124,9 +107,9 @@ const EditPokemonPage = () => {
         </div>
       ))}
       <button type="button" className={styles.addButton} onClick={addRegion}>Add Another Region</button>
-      <button type="submit" className={styles.submitButton}>Edit changes</button>
+      <button type="submit" className={styles.submitButton}>Create Pokemon</button>
     </form>
   );
 };
 
-export default EditPokemonPage;
+export default AddPokemonPage;

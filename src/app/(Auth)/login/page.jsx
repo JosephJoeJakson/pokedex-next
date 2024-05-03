@@ -13,7 +13,7 @@ const LoginPage = () => {
     // Check if user is already logged in
     const loggedUser = localStorage.getItem('currentUser');
     if (loggedUser) {
-      window.location.href = '/myaccount'; // Redirect to account page if already logged in using window.location.href
+      window.location.href = './myaccount'; // Redirect to account page if already logged in using window.location.href
     }
 
     // Load users data
@@ -31,7 +31,7 @@ const LoginPage = () => {
     if (user) {
       console.log("Login successful");
       localStorage.setItem('currentUser', JSON.stringify(user)); // Save user data in localStorage
-      window.location.href = '/myaccount'; // Redirect to account page after login using window.location.href
+      window.location.href = './myaccount'; // Redirect to account page after login using window.location.href
     } else {
       console.error("Login failed");
       alert("Login Failed: Incorrect Username or Password");
@@ -70,7 +70,7 @@ const LoginPage = () => {
         <button type="submit" className={styles.loginButton}>Login</button>
       </form>
       <div className={styles.link}>
-        <Link href="/register">
+        <Link href="./register">
           Register
         </Link>
       </div>

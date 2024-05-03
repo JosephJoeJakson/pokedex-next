@@ -112,7 +112,7 @@ const UserProfilePage = () => {
           </form>
         )}
         
-          <a href="/myaccount" className={styles.returnButton}>Return to Account</a>
+          <a href="./myaccount" className={styles.returnButton}>Return to Account</a>
         </div>
       );
     };

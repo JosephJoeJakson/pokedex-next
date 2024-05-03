@@ -5,9 +5,9 @@
     },
     "name": "Aquafire",
     "description": "Able to boil the water around it, creating steam to cloak its movements. It's both admired and feared by sailors.",
-    "imgUrl": "https://31.media.tumblr.com/d711da6b2376ed96357f276d8bfa3a38/tumblr_n1kr3digAx1slclp6o1_500.gif",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/356",
     "types": [
-      "NORMAL",
+      "WATER",
       "FIRE"
     ],
     "regions": [
@@ -26,8 +26,8 @@
     "description": "Generates electricity using its metallic claws, capable of causing landslides.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/3456",
     "types": [
-      "FIRE",
-      "GROUND"
+      "ELECTRIC",
+      "FIRE"
     ],
     "regions": [
       {
@@ -45,7 +45,7 @@
     "description": "Freezes its surroundings to create a fortress of ice. It's said to live in the deepest parts of the arctic.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/1222",
     "types": [
-      "WATER",
+      "ICE",
       "PSYCHIC"
     ],
     "regions": [
@@ -62,9 +62,9 @@
     },
     "name": "Sylvanix",
     "description": "Emits a calming aura that promotes plant growth. It's a guardian of ancient forests.",
-    "imgUrl": "https://s3.getstickerpack.com/storage/uploads/sticker-pack/pokemon-memes/sticker_7.png?2dcb9a80d21a1efc01320a9d0644b36b&d=200x200",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/35676",
     "types": [
-      "ELECTRIC",
+      "GRASS",
       "FAIRY"
     ],
     "regions": [
@@ -83,8 +83,8 @@
     "description": "Absorbs sunlight with its wings to power its radiant arrow attacks.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/2365",
     "types": [
-      "GRASS",
-      "FLYING"
+      "FLYING",
+      "PSYCHIC"
     ],
     "regions": [
       {
@@ -102,7 +102,7 @@
     "description": "Commands the power of storms and the dead, feared in ancient times as an omen of disaster.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/1111",
     "types": [
-      "ICE",
+      "DARK",
       "ELECTRIC"
     ],
     "regions": [
@@ -121,8 +121,8 @@
     "description": "It dances in the moonlight, charging its luminous fur with a mystical glow that can guide lost travelers.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/2222",
     "types": [
-      "FIGHTING",
-      "FAIRY"
+      "FAIRY",
+      "FIGHTING"
     ],
     "regions": [
       {
@@ -140,7 +140,7 @@
     "description": "Its claws can melt through the thickest armor. It marks its territory with scorched earth.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/3333",
     "types": [
-      "POISON",
+      "FIRE",
       "STEEL"
     ],
     "regions": [
@@ -159,8 +159,8 @@
     "description": "It launches quills from its wings at supersonic speeds, targeting its prey with deadly accuracy.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/4444",
     "types": [
-      "GROUND",
-      "NORMAL"
+      "NORMAL",
+      "FLYING"
     ],
     "regions": [
       {
@@ -172,13 +172,13 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc95665Y74a367856ce3d3"
+      "$oid": "65e9dc8d2fc459a367856ce3d4"
     },
     "name": "Venomshade",
     "description": "It lurks in the shadows, its venom capable of weakening even the strongest foes before they notice its presence.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/5555",
     "types": [
-      "FLYING",
+      "POISON",
       "DARK"
     ],
     "regions": [
@@ -191,33 +191,14 @@
   },
   {
     "_id": {
-      "$oid": "65e9dc8d2fc5659a367856ce3d4"
-    },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
-    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/666996",
-    "types": [
-      "PSYCHIC",
-      "ROCK"
-    ],
-    "regions": [
-      {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
-      }
-    ],
-    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
-  },
-  {
-    "_id": {
       "$oid": "65e9dc8d2f3345c9a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Gearthorn",
+    "description": "Its massive horns can pierce through rock, known to charge at anything that enters its territory.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/68666",
     "types": [
-      "BUG",
-      "DARK"
+      "GROUND",
+      "ROCK"
     ],
     "regions": [
       {
@@ -231,17 +212,17 @@
     "_id": {
       "$oid": "65e9dc8d2fc66779a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Phantomgale",
+    "description": "Haunts the high seas, creating gusts and gales that can overturn ships.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/66766",
     "types": [
-      "ROCK",
-      "GHOST"
+      "GHOST",
+      "FLYING"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 55,
+        "regionName": "Spectravale"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
@@ -250,17 +231,17 @@
     "_id": {
       "$oid": "65e9dc8d2f9890c9a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Dracoforge",
+    "description": "Molds lava into armor with its fiery breath, legendary for its battles against mountain giants.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/666666",
     "types": [
-      "GHOST",
-      "DRAGON"
+      "DRAGON",
+      "FIRE"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 50,
+        "regionName": "Dragonspeak"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
@@ -269,17 +250,17 @@
     "_id": {
       "$oid": "65e9dc8d2fc343455669a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Steelstrike",
+    "description": "Forged in deep forges, this Pokémon's metallic body can withstand intense pressure and heat.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/655666",
     "types": [
-      "DRAGON",
-      "DARK"
+      "STEEL",
+      "FIGHTING"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 49,
+        "regionName": "Ironholt"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
@@ -288,17 +269,17 @@
     "_id": {
       "$oid": "65e9dc8d2fc899339a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Bugflare",
+    "description": "Glows brightly in the night to attract and mesmerize prey before striking swiftly.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/664466",
     "types": [
-      "DARK",
-      "STEEL"
+      "BUG",
+      "FIRE"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 45,
+        "regionName": "Lumigrove"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
@@ -307,17 +288,17 @@
     "_id": {
       "$oid": "65e9dc8d2fc334455569a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Crystalfrost",
+    "description": "Encases itself in crystal ice for protection. It can manipulate frost to create beautiful patterns.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/63666",
     "types": [
-      "STEEL",
-      "ROCK"
+      "PSYCHIC",
+      "ICE"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 67,
+        "regionName": "Crystal Lake"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
@@ -326,16 +307,36 @@
     "_id": {
       "$oid": "65e9dc8d2fc459a367856ce3d4"
     },
-    "name": "Boulderift",
-    "description": "It can control the ground, causing earthquakes to thwart its enemies. It's considered the guardian of the earth.",
+    "name": "Fairywind",
+    "description": "Its magical wings shimmer with a spectral light that heals the wounds of forest creatures.",
     "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/66466",
     "types": [
+      "ROCK",
       "FAIRY"
     ],
     "regions": [
       {
-        "regionNumber": 35,
-        "regionName": "Stonevale"
+        "regionNumber": 76,
+        "regionName": "Mystic Ridge"
+      }
+    ],
+    "_class": "fr.iut.ak.pkdxapi.models.PkmnData"
+  },
+  {
+    "_id": {
+      "$oid": "65e9dc8d2fc343455667a367856ce3d4"
+    },
+    "name": "FightNight",
+    "description": "Forged in deep forges, this Pokémon's metallic body can withstand intense pressure and heat.",
+    "imgUrl": "https://lorempokemon.fakerapi.it/pokemon/200/55",
+    "types": [
+      "FIGHTING",
+      "FAIRY"
+    ],
+    "regions": [
+      {
+        "regionNumber": 49,
+        "regionName": "Ironholt"
       }
     ],
     "_class": "fr.iut.ak.pkdxapi.models.PkmnData"

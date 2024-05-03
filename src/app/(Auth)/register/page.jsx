@@ -19,7 +19,7 @@ const RegisterPage = () => {
     };
 
     try {
-      const response = await fetch('ttp://localhost:8080/api/users/register', {
+      const response = await fetch('https://localhost:8080/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ const RegisterPage = () => {
 
       if (response.ok) {
         console.log('User registered successfully');
-        window.location.href = '/login';
+        window.location.href = './login';
       } else {
         console.error('Failed to register user');
       }
@@ -83,7 +83,7 @@ const RegisterPage = () => {
         </button>
       </form>
       <div className={styles.link}>
-        <Link href="/login">
+        <Link href="./login">
           Already have an account? Login
         </Link>
       </div>

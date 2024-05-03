@@ -19,7 +19,7 @@ const EditPokemonPage = () => {
 
     const fetchPokemonData = async () => {
       try {
-        const response = await fetch('/PkmnData.json');
+        const response = await fetch('./PkmnData.json');
         const pokemons = await response.json();
         const specificPokemon = pokemons.find(p => p._id.$oid === pokemonId);
         if (specificPokemon) {

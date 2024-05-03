@@ -13,7 +13,7 @@ const CreateTrainerPage = () => {
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (!currentUser) {
-      window.location.href = '/login'; // Redirect to login page
+      window.location.href = './login'; // Redirect to login page
       return;
     }
 
@@ -24,7 +24,7 @@ const CreateTrainerPage = () => {
         const userTrainer = trainers.find(trainer => trainer.username === currentUser._id);
         if (userTrainer) {
           alert("You already have a trainer profile.");
-          window.location.href = '/myaccount'; // Redirect to account page or other appropriate page
+          window.location.href = './myaccount'; // Redirect to account page or other appropriate page
         }
       })
       .catch(error => {
@@ -63,7 +63,7 @@ const CreateTrainerPage = () => {
     event.preventDefault();
     if (validateForm()) {
       console.log('Form is valid');
-      window.location.href = '/myaccount';
+      window.location.href = './myaccount';
 
     } else {
         

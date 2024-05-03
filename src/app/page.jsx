@@ -153,13 +153,13 @@ const PokemonPage = () => {
 
     {isModalOpen && selectedPokemon && (
       <div className={styles.modal}>
-        <div className={`${styles.modalContent} ${selectedPokemon.types[0]}`}>
+        <div className={`${styles.modalContent} ${selectedPokemon.types[0]}`} style={{ backgroundImage: `url(${selectedPokemon.types[0]}.png)` }}>
           <span className={styles.closeButton} onClick={closeModal}>&times;</span>
           <h1 className={styles.pokemonName}>{selectedPokemon.name}</h1>
           <img src={selectedPokemon.imgUrl} alt={selectedPokemon.name} className={styles.pokemonImage} />
           <p className={styles.pokemonDescription}>{selectedPokemon.description}</p>
           <div className={styles.infoTypes}>
-            <h3>Types</h3>
+            <h3>Types :</h3>
             {selectedPokemon.types && selectedPokemon.types.length > 0 ? (
               selectedPokemon.types.map((type, index) => (
                 <span key={index} className={`${[type]} type`}>
@@ -274,9 +274,8 @@ const PokemonPage = () => {
     <div className={styles.deleteModal}>
       <p>Are you sure you want to delete {pokemonToDelete.name}?</p>
       <button className={styles.modalButton} onClick={() => {
-        // Assume the deletion is a GET request for simplicity; use DELETE in real applications
-        window.location.href = `/delete-pokemon?name=${encodeURIComponent(pokemonToDelete.name)}`;
-        setShowDeleteModal(false); // Close modal after initiating delete
+        window.location.href = `./`;
+        setShowDeleteModal(false);
       }}>Yes</button>
       <button className={styles.modalButton} onClick={() => setShowDeleteModal(false)}>No</button>
     </div>
