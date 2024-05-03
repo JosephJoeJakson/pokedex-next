@@ -73,7 +73,7 @@ const MyAccountPage = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('currentUser');
-    window.location.href = '/login'; 
+    window.location.href = './login'; 
   };
 
 
