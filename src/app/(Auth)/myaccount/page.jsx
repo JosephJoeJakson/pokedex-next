@@ -5,7 +5,7 @@ import DeleteConfirmationModal from './DeleteConfirmationModal';
 
 
 const MyAccountPage = () => {
-  const [currentUser, setCurrentUser] = useState(() => JSON.parse(localStorage.getItem('currentUser')) || {});
+  const [currentUser, setCurrentUser] = useState({});
   const [trainerInfo, setTrainerInfo] = useState(null);
   const [pokemonsSeen, setPokemonsSeen] = useState([]);
   const [pokemonsCaught, setPokemonsCaught] = useState([]);
@@ -17,6 +17,30 @@ const MyAccountPage = () => {
   useEffect(() => {
     fetchTrainerInfo();
   }, []); 
+
+  useEffect(() => {
+    // Function to fetch the current user from local storage
+    const loadCurrentUser = () => {
+        const storedUser = JSON.parse(localStorage.getItem('currentUser')) || {};
+        setCurrentUser(storedUser);
+    };
+
+    loadCurrentUser(); // Call the function when the component mounts
+
+    // Optional: Setup an event listener for changes in local storage if the user data might be updated in other tabs
+    const handleStorageChange = (event) => {
+        if (event.key === 'currentUser') {
+            loadCurrentUser();
+        }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+        window.removeEventListener('storage', handleStorageChange);
+    };
+}, [])
 
   const fetchTrainerInfo = async () => {
     if (!currentUser || !currentUser._id) {

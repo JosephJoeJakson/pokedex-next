@@ -4,43 +4,67 @@ import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
 const UserProfilePage = () => {
-    const [currentUser, setCurrentUser] = useState(() => JSON.parse(localStorage.getItem('currentUser')) || {});
-    const [userDetails, setUserDetails] = useState({
+  const [currentUser, setCurrentUser] = useState({});
+  const [userDetails, setUserDetails] = useState({
       username: '',
       newPassword: '',
       confirmPassword: ''
-    });
-    const [trainerDetails, setTrainerDetails] = useState(null); // Set to null initially
+  });
+  const [trainerDetails, setTrainerDetails] = useState(null); // Set to null initially
 
-    useEffect(() => {
-      const fetchTrainerInfo = async () => {
-        if (!currentUser || !currentUser._id) {
-          console.log("No user logged in");
-          return;
-        }
+  useEffect(() => {
+      // Function to fetch the current user from local storage
+      const loadCurrentUser = () => {
+          const storedUser = JSON.parse(localStorage.getItem('currentUser')) || {};
+          setCurrentUser(storedUser);
+      };
 
-        try {
-          const response = await fetch('./trainer.json');
-          const allTrainers = await response.json();
-          const trainerData = allTrainers.find(trainer => trainer.username === currentUser._id);
+      loadCurrentUser(); // Call the function when the component mounts
 
-          if (trainerData) {
-            setTrainerDetails({
-              trainerName: trainerData.trainerName || '',
-              imgUrl: trainerData.imgUrl || ''
-            });
-          } else {
-            console.log("No trainer found for the user");
-            setTrainerDetails(null);  // Ensure trainer form is not displayed if no data is found
+      // Optional: Setup an event listener for changes in local storage if the user data might be updated in other tabs
+      const handleStorageChange = (event) => {
+          if (event.key === 'currentUser') {
+              loadCurrentUser();
           }
-        } catch (error) {
-          console.error("Failed to fetch trainer data:", error);
-          setTrainerDetails(null);
-        }
+      };
+
+      window.addEventListener('storage', handleStorageChange);
+
+      // Cleanup the event listener when the component unmounts
+      return () => {
+          window.removeEventListener('storage', handleStorageChange);
+      };
+  }, []); // Empty dependency array means this effect runs only once after the initial render
+
+  useEffect(() => {
+      const fetchTrainerInfo = async () => {
+          if (!currentUser || !currentUser._id) {
+              console.log("No user logged in");
+              return;
+          }
+
+          try {
+              const response = await fetch('./trainer.json');
+              const allTrainers = await response.json();
+              const trainerData = allTrainers.find(trainer => trainer.username === currentUser._id);
+
+              if (trainerData) {
+                  setTrainerDetails({
+                      trainerName: trainerData.trainerName || '',
+                      imgUrl: trainerData.imgUrl || ''
+                  });
+              } else {
+                  console.log("No trainer found for the user");
+                  setTrainerDetails(null); // Ensure trainer form is not displayed if no data is found
+              }
+          } catch (error) {
+              console.error("Failed to fetch trainer data:", error);
+              setTrainerDetails(null);
+          }
       };
 
       fetchTrainerInfo();
-    }, [currentUser]);
+  }, [currentUser._id]);
 
     const handleUserChange = (event) => {
       const { name, value } = event.target;
