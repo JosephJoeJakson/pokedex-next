@@ -19,14 +19,14 @@ This is a [Next.js](https://nextjs.org/) pokedex
 
 # Fonctuionalitées non présentes 
 - Afficher les pokémons vu ou capturé pour le trainer
-- Formulaire, bouton et recherche non fonctionelle 
+- Pas de trainer visible
+- Formulaire, bouton et recherche non fonctionnelle 
 
 # Les données
 - Il y a déjà 18 pokémons
 - Il y a 2 compte test :
 - 1 compte Admin --> Login: admin MDP: admin
 - 1 compte Normal --> Login: John MDP: John
-- 1 trainer pour le compte normal nommé Marck
 
 # Version récente du pokédex sur la branche Dev
 - Pour lancer la version dev faire un npm i puis un npm run dev 
