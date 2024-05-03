@@ -59,7 +59,7 @@ const EditPokemonPage = () => {
     event.preventDefault();
 
       console.log('Form is valid');
-      window.location.href = '/';
+      window.location.href = './';
   };
  
   return (

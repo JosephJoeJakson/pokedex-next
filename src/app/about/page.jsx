@@ -24,7 +24,7 @@ const AboutPage = () => {
       </p>
       <h2>Contact Us</h2>
       <p>
-        Have questions or feedback? We'd love to hear from you! You can reach out to us at:
+        Have questions or feedback? Wed love to hear from you! You can reach out to us at:
         <a href="mailto:support@exemple.com">support@exemple.com</a>
       </p>
     </div>
