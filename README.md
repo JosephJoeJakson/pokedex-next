@@ -29,4 +29,5 @@ This is a [Next.js](https://nextjs.org/) pokedex
 - 1 trainer pour le compte normal nommé Marck
 
 # Version récente du pokédex sur la branche Dev
+- Pour lancer la version dev faire un npm i puis un npm run dev 
 # Version build sur la branche Prod : --> https://josephjoejakson.github.io/pokedex-next/
