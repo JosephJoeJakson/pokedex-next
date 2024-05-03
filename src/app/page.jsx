@@ -198,7 +198,7 @@ const PokemonPage = () => {
         <img src="./search.webp" alt="filter-icon" className={styles.filterIcon} onClick={toggleFilterBar}/>
         {isLoggedIn && isAdmin && (
         <button className={styles.adminToggle} onClick={() => setShowAdminCommands(prev => !prev)}>
-            {showAdminCommands ? "Hide Admin Tools" : "Show Admin Tools"}
+            {showAdminCommands ? "Hide Tools" : "Show Tools"}
         </button>
     )}
       </div>

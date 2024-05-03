@@ -143,12 +143,24 @@
   margin-left: 10px;
   border: white 1px solid;
 }
-
+.adminToggle {
+  background-color: #007BFF;
+  border-radius: 20px;
+  width: 50%;
+  color: white;
+  overlay: none ;
+  border: 2px #2c2c2c3f solid;
+  transition: .5s;
+  cursor: pointer;
+}
+.adminToggle:hover {
+  background-color: #0056b3;
+}
 .adminTools>a, .adminTools>button {
   color: white;
   overlay: none;
   border: 3px solid rgba(255,255,255,0.2);
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 5px;
   font-size: 14px;
   background-color: #2c2c2c3f;
@@ -292,7 +304,7 @@ justify-content: space-evenly;
 }
 
 
-/* Container for the modal, covers the whole screen */
+/* Container for the modal, covers the whole screen
 .modal {
   position: fixed;
   top: 0;
@@ -303,21 +315,96 @@ justify-content: space-evenly;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Make sure it's on top of other content */
+  z-index: 1000; /* Make sure it's on top of other content 
 }
 
-/* Content inside the modal */
+/* Content inside the modal 
 .modalContent {
   position: relative;
-  /* background-color: white; */
+  /* background-color: white; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 600px;
   text-align: center;
+} */
+
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Dim the background */
+  z-index: 1000;
 }
 
+.modalContent {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: modalAppear 0.3s ease-out;
+}
+
+@keyframes modalAppear {
+  from {transform: translateY(-50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #333;
+}
+
+.pokemonName {
+  color: #333;
+  text-align: center;
+}
+
+.pokemonImage {
+  display: block;
+  margin: 20px auto;
+  width: 50%; /* Adjust size as needed */
+  max-width: 200px;
+}
+
+.pokemonDescription {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.infoTypes, .pokemonRegions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.infoTypes h3, .pokemonRegions h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.type, .region {
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 /* Pokémon name styling */
 .pokemonName {

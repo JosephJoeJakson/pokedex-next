@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    backdrop-filter: blur(4px);
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form h1 {
+    color: #f44336;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formGroup input[type="text"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.formGroup input[type="text"]:focus {
+    border-color: #f44336;
+    outline: none;
+}
+
+.inputError {
+    border-color: #ff5722; /* Make error fields stand out */
+}
+
+.errorText {
+    color: #d32f2f; /* Error message color */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.submitButton {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #d32f2f;
+}

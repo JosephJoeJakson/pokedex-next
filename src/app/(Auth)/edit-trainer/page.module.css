@@ -1,1 +1,74 @@
-   
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    backdrop-filter: blur(4px);
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form h2 {
+    color: #f44336;
+    text-align: center;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form input[type="text"], 
+.form input[type="password"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form input[type="text"]:focus, 
+.form input[type="password"]:focus {
+    border-color: #f44336;
+    outline: none;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #d32f2f;
+}
+
+.returnButton {
+    margin-top: 20px;
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.returnButton:hover {
+    text-decoration: underline;
+}

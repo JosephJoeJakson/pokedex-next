@@ -13,7 +13,6 @@ const CreateTrainerPage = () => {
   useEffect(() => {
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (!currentUser) {
-      alert("You must be logged in to create a trainer profile.");
       window.location.href = '/login'; // Redirect to login page
       return;
     }
@@ -64,7 +63,6 @@ const CreateTrainerPage = () => {
     event.preventDefault();
     if (validateForm()) {
       console.log('Form is valid');
-      alert('Trainer profile created successfully!');
       window.location.href = '/myaccount';
 
     } else {

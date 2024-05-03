@@ -1,55 +1,37 @@
-/* page.module.css */
 .container {
-  background-color: #ffffff;  /* Bright white background for contrast */
-  color: #333333;
-  padding: 40px 20px 20px 20px;
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   margin: auto;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.container h1,   .container h2 {
-  font-size: 3rem;
-  background: -webkit-linear-gradient(45deg, #ff6347, #ffeb3b, #8bc34a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: rainbowAnimation 10s ease infinite;
+  max-width: 800px; /* Optimal reading width */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background to maintain readability */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 20px 0;
+  backdrop-filter: blur(4px); /* Stylish blur effect for modern look */
 }
 
-@keyframes rainbowAnimation {
-  0%, 100% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(360deg);
-  }
+.container h1,.container  h2 {
+  color: #f44336; /* Consistent header color with the rest of the site */
+  padding: 10px 0;
 }
 
 .container p {
-  line-height: 1.7;
-  color: #2c3e50; /* Darker color for better readability */
-  text-align: justify;
-  margin-bottom: 25px;
-  position: relative;
+  color: #333; /* Dark grey for readable text */
+  line-height: 1.6; /* Enhances readability */
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: justify; /* Justified text for a polished look */
 }
 
 .container a {
-  color: #e91e63; /* Pink for high visibility and contrast */
-  font-weight: bold;
-  position: relative;
-  z-index: 2; /* Ensures link stays clickable */
+  color: #ff5722; /* Link color matching the theme */
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .container a:hover {
-  color: #9c27b0; /* Purple on hover for a fun change */
-  text-decoration: underline wavy #ffeb3b; /* Wavy underline for extra funk */
-}
-
-
-@media (max-width: 500px) {
- .container {
-  width: 100vw;
- }
+  color: #f44336; /* Link hover effect for user interaction */
+  text-decoration: underline; /* Underline on hover for clarity */
 }

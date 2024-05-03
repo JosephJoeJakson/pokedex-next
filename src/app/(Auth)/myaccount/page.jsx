@@ -11,18 +11,21 @@ const MyAccountPage = () => {
   const [pokemonsCaught, setPokemonsCaught] = useState([]);
   const [showDeleteProfileModal, setShowDeleteProfileModal] = useState(false);
   const [showDeleteTrainerModal, setShowDeleteTrainerModal] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
+
 
   useEffect(() => {
     fetchTrainerInfo();
-  }, []); // Dependencies array is empty, meaning this runs only once when the component mounts.
+  }, []); 
 
   const fetchTrainerInfo = async () => {
     if (!currentUser || !currentUser._id) {
       console.log("No user logged in");
-      return; // Optionally redirect to login page or handle accordingly
+      return; 
     }
 
     try {
+      setIsAdmin(currentUser.admin);
       const response = await fetch('./trainer.json');
       const allTrainers = await response.json();
       const trainerData = allTrainers.find(trainer => trainer.username === currentUser._id);
@@ -45,55 +48,65 @@ const MyAccountPage = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('currentUser'); // Clear user session
-    window.location.href = '/login'; // Redirect to login page
+    localStorage.removeItem('currentUser');
+    window.location.href = '/login'; 
   };
 
 
   const deleteProfile = async () => {
   try {
     const response = await fetch('/api/user/delete', { method: 'DELETE' });
-      alert('Profile deleted successfully.');
+
  
   } catch (error) {
     console.error('Error deleting profile:', error);
-    alert('Failed to delete profile.');
+
   }
-  setShowDeleteProfileModal(false);  // Close the modal after action
+  setShowDeleteProfileModal(false);  
 };
 
 const deleteTrainer = async () => {
   try {
     const response = await fetch('/api/trainer/delete', { method: 'DELETE' });
 
-      alert('Trainer deleted successfully.');
+
 
   } catch (error) {
     console.error('Error deleting trainer:', error);
-    alert('Failed to delete trainer.');
+
   }
-  setShowDeleteTrainerModal(false);  // Close the modal after action
+  setShowDeleteTrainerModal(false);  
 };
 
   return (
       <div className={styles.container}>
+              <h2>Welcome back {currentUser._id}</h2>
         <div className={styles.userInfo}>
-          <p>Welcome to your account {currentUser._id}</p>
-          <a className={styles.modifyButton} href="/edit-trainer">
-  Modify account
-</a>
+        <a className={styles.modifyButton} href="./edit-trainer">Modify account</a>
+        <button onClick={handleLogout} className={styles.logoutButton}>Logout</button>
+        <button onClick={() => setShowDeleteProfileModal(true)}  className={styles.deleteUserButton}>Delete Profile</button>
+        <button onClick={() => setShowDeleteTrainerModal(true)} className={styles.deleteTrainerButton}>Delete Trainer</button>
         </div>
 
+        {isAdmin && (
+    <div className={styles.adminTools}>
+      <h2>Admin tools</h2>
+     <a className={styles.addPokemon} href={`./add-pokemon`}>Create a new pokemon</a>
+
+
+    </div>
+)}
+
+        <h2>Your Trainer</h2>
         {trainerInfo ? (
           <>
+
             <div className={styles.trainerInfo}>
-              <div className={styles.trainerProfile}>
                 <img src={trainerInfo.imgUrl} alt="Trainer" />
                 <p>{trainerInfo.trainerName}</p>
-              </div>
-              <p>{trainerInfo.creationDate}</p>
             </div>
             <div className={styles.pokemonCount}>
+            <div className={styles.pokemonSeen}>
               <h2>Seen:</h2>
               <ul>
                 {pokemonsSeen.length > 0 ? (
@@ -104,7 +117,8 @@ const deleteTrainer = async () => {
                   <li>None</li>
                 )}
               </ul>
-    
+    </div>
+    <div className={styles.pokemonCaught}>
               <h2>Caught:</h2>
               <ul>
                 {pokemonsCaught.length > 0 ? (
@@ -116,17 +130,15 @@ const deleteTrainer = async () => {
                 )}
               </ul>
             </div>
-            <button onClick={() => setShowDeleteTrainerModal(true)}>Delete Trainer</button>
+            </div>
           </>
         ) : (
           <div>
-            <p>No trainer profile found. Create one here : <a href="/create-trainer">Create</a></p>
+            <p className={styles.noTrainer}><img className={styles.emptyIcon} src="./emptyIcon.png" alt="Empty Icon"/>No trainer profile found. Create one <a className={styles.createTrainer} href="./create-trainer">here</a></p>
           </div>
         )}
     
-        <button onClick={handleLogout} className={styles.logoutButton}>Logout</button>
-        <a href="/edit-trainer">Edit Trainer</a>
-        <button onClick={() => setShowDeleteProfileModal(true)}>Delete Profile</button>
+       
     
         <DeleteConfirmationModal
           isOpen={showDeleteProfileModal}

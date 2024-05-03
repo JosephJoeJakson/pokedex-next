@@ -1,4 +1,4 @@
-.container {
+/* .container {
 
     width: 100%;
     display: flex;
@@ -46,4 +46,146 @@
     justify-content: center;
     padding: 10px;
 }
+ */
 
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+    backdrop-filter: blur(4px);
+}
+
+.userInfo, .trainerInfo, .pokemonCount {
+    background-color: #dadada;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+    margin: 10px;
+}
+.trainerInfo {
+    display: flex;
+    width: 100%;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.trainerInfo>img {
+    width: 50px;
+    margin-right: 10px;
+}
+.userInfo p, .trainerInfo p, .pokemonCount h2, .pokemonCount ul {
+    color: #333;
+    text-align: center;
+}
+
+
+.trainerProfile, .userInfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userInfo {
+    width: 100%;
+}
+.pokemonCount {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px ;
+    width: 100%;
+   justify-content: space-between;
+}
+.pokemonSeen, .pokemonCaught {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 10px;
+border: 2px solid rgba(0, 0, 0, 0.377);
+    width: 30%;
+    margin: 10px;
+}
+.trainerProfile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.modifyButton, .logoutButton {
+    background-color: #67c550;
+}
+
+
+.container button, .userInfo a, .addPokemon {
+    font-size: 10px;
+    color: white;
+    box-shadow: #33333334 -1px 2px 4px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addPokemon {
+    background-color: #2f32d3;
+}
+
+.adminTools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    background-color: #33333334;
+}
+.deleteTrainerButton, .deleteUserButton {
+    background-color: #d32f2f;
+}
+
+.userInfo a:hover, .userInfo button:hover, .addPokemon:hover, .createTrainer:hover {
+    text-decoration: underline;
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.noTrainer {
+    position: relative;
+}
+.emptyIcon {
+    width: 100px;
+    position: absolute;
+    top: -60px;
+    left: -120px;
+}
+.createTrainer {
+    background-color:#2f32d3;
+    color: #dadada;
+    padding: 4px;
+    border-radius: 5px;
+}
+@media (max-width: 770px) {
+
+    .pokemonCount {
+     flex-direction: column;
+     align-items: center;
+    }
+    
+  }
+  
+  

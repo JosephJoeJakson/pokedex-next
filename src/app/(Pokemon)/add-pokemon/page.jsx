@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import styles from './page.module.css';
 
@@ -11,12 +10,26 @@ const EditPokemonPage = () => {
     types: [],
     regions: [{ regionName: '', regionNumber: '' }]
   });
+  const [currentUser, setCurrentUser] = useState({
+    admin: false
+  });
 
   useEffect(() => {
-    // Extracting the Pokemon ID from the URL query parameter
+    // Fetch current user details (pseudo-code, replace with your actual data fetching logic)
+    const fetchCurrentUser = async () => {
+      try {
+        const userResponse = await fetch('/api/currentUser');
+        const userData = await userResponse.json();
+        setCurrentUser(userData);
+      } catch (error) {
+        console.error('Failed to fetch user data:', error);
+      }
+    };
+
+    fetchCurrentUser();
+
     const queryParams = new URLSearchParams(window.location.search);
     const pokemonId = queryParams.get('pkm');
-
     const fetchPokemonData = async () => {
       try {
         const response = await fetch('/PkmnData.json');
@@ -39,6 +52,10 @@ const EditPokemonPage = () => {
   }, []);
 
   const handleRegionChange = (index, field, value) => {
+    if (!currentUser.admin) {
+      alert("You do not have permission to edit this.");
+      return;
+    }
     const updatedRegions = pokemon.regions.map((region, i) => {
       if (i === index) {
         return { ...region, [field]: value };
@@ -49,6 +66,10 @@ const EditPokemonPage = () => {
   };
 
   const addRegion = () => {
+    if (!currentUser.admin) {
+      alert("You do not have permission to add regions.");
+      return;
+    }
     setPokemon(prevState => ({
       ...prevState,
       regions: [...prevState.regions, { regionName: '', regionNumber: '' }]
@@ -57,11 +78,15 @@ const EditPokemonPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-      console.log('Form is valid');
-      window.location.href = '/';
+    if (!currentUser.admin) {
+      alert("You do not have permission to save changes.");
+      return;
+    }
+    console.log('Form is valid');
+    alert('Edit saved successfully!');
+    window.location.href = '/';
   };
- 
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <label>Name:

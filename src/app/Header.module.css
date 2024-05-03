@@ -1,4 +1,4 @@
-/* components/Header.module.css */
+/* components/Header.module.css
 .header {
     background-color:  rgb(80, 86, 112);
     padding: 20px 0;
@@ -31,4 +31,39 @@
     color:  rgb(80, 86, 112);
     background-color: #f1f0f0;
   }
-  
+   */
+
+   .header {
+    background: linear-gradient(to right, #9c271f, #ff5722); /* Red gradient similar to the login and register forms */
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navList li {
+    margin: 0 20px; /* Space between menu items */
+}
+
+.navList li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+.navList li a:hover, .navList li a:focus {
+    background-color: #d32f2f; /* Darker red on hover for contrast */
+    color: #ffffff; /* Ensure text is still white */
+    text-decoration: none; /* No underline on hover */
+}

@@ -50,7 +50,7 @@ const RegisterPage = () => {
           <input
             type="text"
             id="username"
-            name="username"
+            name="username" 
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
